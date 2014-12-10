@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<title>WaniKani Notifier Options</title>
+	<meta charset="utf-8" />
+	<script src="../javascripts/options.js"></script>
+	<style>
+		.container {
+			width: 750px;
+			margin: 0px auto;
+		}
+		
+		body {
+			font-family: Verdana;
+			font-size: 12px;
+		}
+		
+		label {
+			display: block;
+		}
+		
+		header {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="../images/icon-128.png" /><h1>WaniKani Notifier Options</h1>
+		</header>
+		<label for="api-key">API key: <input type="text" id="api-key" /> (can be found on your WaniKani settings page)</label>
+		<label for="sound-effect">Sound effect: <select id="sound-effect">
+			<option value="none">(none)</option>
+			<option value="review-time.mp3">Review Time!</option>
+			<option value="altair.ogg">Altair</option>
+		</select></label>
+		<label for="show-notification"><input type="checkbox" id="show-notification" /> Show notification</label>
+		<label for="auto-hide-notification"><input type="checkbox" id="auto-hide-notification" /> Auto-hide notification after 5 seconds</label>
+		<label for="always-show-notification"><input type="checkbox" id="always-show-notification" /> Always show notification (will otherwise only show when review count goes from zero to non-zero)</label>
+		<label for="update-frequency">Update frequency (in minutes): <input type="number" min="15" max="1440" id="update-frequency" /> (only used when there already are reviews)</label>
+		<label for="hide-numbers"><input type="checkbox" id="hide-numbers" /> Hide numbers (displays a plus sign instead)</label>
+		<input type="button" id="save" value="Save" /> <span id="status"></span>
+	</div>
+</body>
+</html>

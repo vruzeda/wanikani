@@ -1,0 +1,13 @@
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #1B7AE0;
+}
+
+a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,42 @@
+@import "main.css";
+
+body {
+	min-width: 400px;
+}
+
+#username {
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#progress-bar {
+	width: 100%;
+	position: relative;
+	background: #849AB3;
+}
+
+#progress-bar > div {
+	background: #3F74B0;
+	height: 16px;
+	width: 53%;
+}
+
+#progress-bar > span {
+	position: absolute;
+	top: 0px;
+	color: white;
+}
+
+#avatar {
+	float: left;
+	margin-right: 10px;
+}
+
+#user-details {
+	float: left;
+	width: 280px;
+}
+
+.less-important {
+	font-size: 10px;
+}
